@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Flex Panels 💪</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Flex Panels created using HTML, CSS and JavaScript" />
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -134,18 +137,7 @@
       <p>Motion</p>
     </div>
   </div>
-  <script>
-    const panels = document.querySelectorAll('.panel');
-    function toggleOpen() {
-      this.classList.toggle('open');
-    }
-    function toggleActive(e) {
-      if (e.propertyName.includes('flex')) {
-        this.classList.toggle('open-active');
-      }
-    }
-    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+  <script src='scripts.js'>
   </script>
 </body>
 </html>
